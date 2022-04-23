@@ -1,0 +1,114 @@
+.header {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .8),rgb(0 0 0 / .7)),url(../public/img/header.jpg);
+    background-size: cover; 
+    background-position: 50%;
+    padding: 5rem;
+    position: relative ;
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra img{
+ cursor: pointer;
+}
+
+@media(min-width:768px){
+    .barra{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion{
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    z-index: 1; 
+}
+
+@media(min-width:768px){
+    .navegacion{
+        margin-top: 0;
+    }
+}
+
+.navegacion a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: .5rem;
+    border-radius: 10%;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+.navegacion a:hover {
+ background-color: #dd6300;
+}
+
+/* ----------------------------------------------------------- */
+
+.modelo{
+    color: #fff;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+@media (min-width:768px){
+    .modelo{
+        text-align: left;
+        width: 50%; 
+    }
+}
+
+.modelo h2{
+    font-size: 7rem;
+   
+}
+
+.modelo p:first-of-type{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-size: 2.5rem;
+}
+
+.precio{
+    font-size: 6rem;
+    margin: 0;
+    font-weight: 700;
+    color: #dd6300;
+}
+
+.guitarra{
+    display: none;
+}
+
+@media (min-width:992px){
+    .guitarra{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        animation-name: AnimarGuitarra;
+        animation-duration: 1s;
+    }
+}
+
+@keyframes AnimarGuitarra {
+    0%{
+        opacity: 0;
+        transform: translateX(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

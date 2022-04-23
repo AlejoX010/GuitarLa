@@ -1,0 +1,72 @@
+.guitarra {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    align-items: center;
+ 
+}
+
+.contenido{
+    padding: 1rem;
+}
+
+.contenido h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.descripcion{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-align:justify;
+}
+
+.precio{
+    color: #dd6300;
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.enlace{
+    margin-top: 2rem;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: 2px solid #dd6300;
+    padding: 1rem;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+}
+
+.enlace:hover{
+    color: #ffffff;
+    background-color: #dd6300;
+}
+
+.mas{
+    margin-top: 2rem;
+    display: inline-flex;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: 2px solid #dd6300;
+    padding: 1rem 3rem;
+    margin-left: 51rem;
+    margin-top: 3rem;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+}
+
+.mas:hover{
+    color: #ffffff;
+    background-color: #dd6300;
+}

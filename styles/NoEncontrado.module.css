@@ -1,0 +1,16 @@
+.contenedor{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor a{
+    
+    color: #dd6300;
+    text-decoration: none;
+}
+
+
