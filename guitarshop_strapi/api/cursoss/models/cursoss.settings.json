@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cursosses",
+  "info": {
+    "name": "Cursoss",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "contenido": {
+      "type": "text",
+      "required": true
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "titulo",
+      "required": true
+    }
+  }
+}
